@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" configfailurepolicy="continue">
+    <listeners>
+        <listener class-name="hcc.automation.testcomponents.Listeners"/>
+    </listeners>
+    <test thread-count="2" name="Test">
+        <classes>
+            <class name="hcc.automation.tests.FDNTest"/>
+
+
+
+        </classes>
+    </test>
+</suite>
