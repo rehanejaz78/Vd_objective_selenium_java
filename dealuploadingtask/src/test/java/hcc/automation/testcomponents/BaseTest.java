@@ -37,17 +37,11 @@ public class BaseTest {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--remote-allow-origins=*");
             options.addArguments("--window-size=1920,1080");
+            options.addArguments("--headless");
             driver = new ChromeDriver(options);
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
             driver.manage().window().maximize();
             return driver;
-
-//            System.setProperty("webdriver.chrome.driver", "chromedriver/chromedriver");
-//            ChromeOptions options = new ChromeOptions();
-//            options.setBinary("/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"); // Correct binary path
-//            options.addArguments("--remote-allow-origins=*");
-//            options.addArguments("--window-size=1920,1080"); // To prevent mobile-size window
-//            driver = new ChromeDriver(options);
 
 
 
